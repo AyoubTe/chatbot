@@ -33,9 +33,11 @@ all_words = [stem(w) for w in all_words if w not in ignore_words]
 # remove duplicates and sort
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
-
+#Show patterns
 print(len(xy), "patterns")
+#Show list of tags
 print(len(tags), "tags:", tags)
+#Show list of words of stem
 print(len(all_words), "unique stemmed words:", all_words)
 
 # create training data

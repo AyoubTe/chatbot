@@ -44,8 +44,6 @@ class Chatbox {
         const message = inputField.value.trim();
         if (message === '') return;
 
-
-
         if (this.currentContext === 'modify_reservation') {
             if (!this.messages.find(msg => msg.type === 'BookingNumber')) {
                 this.messages.push({ name: 'User', type: 'BookingNumber', message });
@@ -67,6 +65,7 @@ class Chatbox {
             if (!this.messages.find(msg => msg.type === 'NameH')) {
                 this.messages.push({ name: 'User', message });
                 this.updateChat();
+                inputField.value = '';
                 this.messages.push({ name: 'ChatBot', message: 'Donner votre nom s\'il vous plait: ' });
                 this.updateChat();
                 return;

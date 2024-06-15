@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block head %}
-    <title>ChatBoot</title>
+    <title>Reservation ChatBoot</title>
     <link rel="stylesheet" href="{{ style }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block body %}
-    <button id="chatbot-toggle-btn"><img src="{{ url_for('static', filename='chatbot-icon.png') }}" alt="buttonpng" width="40px" height="35px"/></button>
+    <button id="chatbot-toggle-btn"><img src="{{ url_for('static', filename='chatbot.svg') }}" alt="buttonpng" width="40px" height="35px"/></button>
     <div class="chatbot-popup" id="chatbot-popup">
         <div class="chat-header">
             <span>Chatbot | <a href="#" target="_blank"></a></span>
@@ -21,5 +21,8 @@
             <button id="send-btn">Send</button>
         </div>
     </div>
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
     <script src="{{ script }}"></script>
 {% endblock %}

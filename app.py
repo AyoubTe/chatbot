@@ -1,19 +1,26 @@
-from datetime import datetime
-from urllib import request
+from flask import Flask, render_template, url_for, request, jsonify
 
-from flask import Flask, render_template, url_for
-from flask_sqlalchemy import SQLAlchemy
+from chat import get_response
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
-db = SQLAlchemy(app)
 
 
-@app.route('/')
+@app.get('/')
 def index():
     script = url_for('static', filename='script.js')
     style = url_for('static', filename='main.css')
     return render_template('index.html', script=script, style=style)
+
+
+@app.post("/chat")
+def chat():
+    text = request.get_json().get("message")
+    result = get_response(text)
+    response = result["response"]
+    tag = result["tag"]
+
+    message = {"answer": response, "context": tag}
+    return jsonify(message)
 
 
 if __name__ == '__main__':

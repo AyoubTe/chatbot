@@ -1,0 +1,144 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hello",
+        "Good day",
+        "Is anyone there?",
+        "Bonjour",
+        "Salut"
+      ],
+      "responses": [
+        "Bonjour! Comment puis-je vous aider aujourd'hui?",
+        "Salut! En quoi puis-je vous etre utile?",
+        "Bonjour, merci de nous avoir contacte. Comment puis-je vous aider?",
+        "Bonjour, comment puis-je vous aider aujourd'hui?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Au revoir",
+        "A bientôt"
+      ],
+      "responses": [
+        "Au revoir, merci de votre visite!",
+        "A bientot! Merci d'avoir utilise nos services.",
+        "Bonne journee, à bientot!",
+        "Au revoir! Revenez nous voir bientot."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Merci",
+        "C'est gentil",
+        "Je vous remercie"
+      ],
+      "responses": [
+        "Avec plaisir!",
+        "Je suis heureux de pouvoir aider!",
+        "De rien!",
+        "N'hesitez pas a demander si vous avez d'autres questions."
+      ]
+    },
+    {
+      "tag": "book_flight",
+      "patterns": [
+        "I want to book a flight",
+        "Can you help me book a flight?",
+        "Reserver un vol",
+        "Je veux réserver un billet d'avion",
+        "Puis-je reserver un vol?"
+      ],
+      "responses": [
+        "Bien sur! Veuillez me fournir la destination de votre vol.",
+        "D'accord, pour quel vol souhaitez-vous reserver (destination)?",
+        "Pourriez-vous me donner sur quel vol que vous souhaitez reserver?"
+      ]
+    },
+    {
+      "tag": "book_hotel",
+      "patterns": [
+        "I want to book a hotel",
+        "Can you help me book a hotel?",
+        "Réserver un hôtel",
+        "Je veux réserver une chambre d'hotel",
+        "Puis-je reserver un hotel?"
+      ],
+      "responses": [
+        "Bien sur! Veuillez me fournir le nom d'hotel : ",
+        "D'accord, pour quel hôtel souhaitez-vous reserver? ",
+        "Pourriez-vous me donner le nom de l'hotel que vous souhaitez reserver?"
+      ]
+    },
+    {
+      "tag": "cancel_reservation",
+      "patterns": [
+        "I want to cancel my reservation",
+        "Can you help me cancel my reservation?",
+        "Annuler ma réservation",
+        "Je veux annuler ma reservation",
+        "Puis-je annuler ma reservation?"
+      ],
+      "responses": [
+        "Bien sur, pourriez-vous me fournir votre numero de reservation?",
+        "D'accord, veuillez me donner votre numero de reservation pour proceder a l'annulation.",
+        "Pour annuler votre reservation, j'ai besoin de votre numero de reservation."
+      ]
+    },
+    {
+      "tag": "modify_reservation",
+      "patterns": [
+        "I want to modify my reservation",
+        "Can you help me modify my reservation?",
+        "Modifier ma réservation",
+        "Je veux changer ma reservation",
+        "Puis-je modifier ma reservation?"
+      ],
+      "responses": [
+        "Bien sur, pourriez-vous me fournir votre numero de reservation?",
+        "D'accord, veuillez me donner votre numero de reservation",
+        "Pour modifier votre reservation, j'ai besoin de votre numero de reservation"
+      ]
+    },
+    {
+      "tag": "covid_policies",
+      "patterns": [
+        "What are the COVID-19 policies?",
+        "Tell me about your COVID-19 measures",
+        "Politiques COVID-19",
+        "Mesures sanitaires",
+        "Quelles sont les mesures COVID-19?"
+      ],
+      "responses": [
+        "Nous suivons toutes les directives sanitaires locales et internationales. Vous pouvez consulter notre page dediee aux mesures COVID-19 pour plus de details.",
+        "Nos politiques COVID-19 incluent des mesures de distanciation sociale, le port du masque obligatoire et des protocoles de nettoyage renforces.",
+        "Pour assurer votre securite, nous avons mis en place plusieurs mesures sanitaires. Visitez notre page dediee pour plus d'informations."
+      ]
+    },
+    {
+      "tag": "recommendations",
+      "patterns": [
+        "Can you recommend a destination?",
+        "What are some popular tourist spots?",
+        "Recommandez-moi une destination",
+        "Quels sont les endroits touristiques populaires?",
+        "Je cherche des recommandations de voyage"
+      ],
+      "responses": [
+        "Bien sur! Pouvez-vous me dire quels types de destinations vous intéressent (plage, montagne, ville, etc.)?",
+        "Je peux vous recommander plusieurs destinations. Preferez-vous des destinations locales ou internationales?",
+        "Quels sont vos interets principaux pour ce voyage (culture, nature, detente, etc.)?"
+      ]
+    }
+  ]
+}

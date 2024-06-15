@@ -25,7 +25,7 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name = "Sam"
+bot_name = "ChatBotResevationHelp"
 
 
 def get_response(msg):
@@ -59,6 +59,5 @@ if __name__ == "__main__":
         if sentence == "quit":
             break
 
-        resp = get_response(sentence)["response"]
-        print(resp)
-
+        response = get_response(sentence)["response"]
+        print(response)

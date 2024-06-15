@@ -117,7 +117,8 @@
         "Tell me about your COVID-19 measures",
         "Politiques COVID-19",
         "Mesures sanitaires",
-        "Quelles sont les mesures COVID-19?"
+        "Quelles sont les mesures COVID-19?",
+        "Quelles sont les mesures sanitaires de COVID-19?"
       ],
       "responses": [
         "Nous suivons toutes les directives sanitaires locales et internationales. Vous pouvez consulter notre page dediee aux mesures COVID-19 pour plus de details.",

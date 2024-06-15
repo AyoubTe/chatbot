@@ -63,7 +63,7 @@ class Chatbox {
             }
         } else if (this.currentContext === 'book_hotel') {
             if (!this.messages.find(msg => msg.type === 'NameH')) {
-                this.messages.push({ name: 'User', message });
+                this.messages.push({ name: 'User', type: 'NameH', message });
                 this.updateChat();
                 inputField.value = '';
                 this.messages.push({ name: 'ChatBot', message: 'Donner votre nom s\'il vous plait: ' });

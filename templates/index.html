@@ -6,18 +6,105 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 {% endblock %}
 
 {% block body %}
+    <header class="header_area" style="background-color: white;">
+        <div class="header_bottom">
+            <div class="container">
+                <div class="main_header">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-2">
+                            <div class="logo">
+                                <a href="#"><img src="{{ url_for('static', filename='chatbot-icon.png') }}" alt="Site Logo" width="40px" height="40px"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-10 nav_area">
+                            <nav class="main_menu">
+                                <div class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Accommodation</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Reservation</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container" style="background-color: white; padding: 0;">
+        <section class="about_us_area section-padding">
+            <div class="container" style="background-color: white; margin-top: 10px; padding-top: 10px;">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%; height: 50%;">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="{{ url_for('static', filename='hotel1.jpg') }}" alt="Hotel image">
+                        </div>
+                        <div class="item">
+                            <img src="{{ url_for('static', filename='fly1.png') }}" alt="Fly image">
+                        </div>
+                        <div class="item">
+                            <img src="{{ url_for('static', filename='hobbie1.jpg') }}" alt="Hobbie image">
+                        </div>
+                        <div class="item">
+                            <img src="{{ url_for('static', filename='hotel2.jpg') }}" alt="Hotel image">
+                        </div>
+                        <div class="item">
+                            <img src="{{ url_for('static', filename='fly2.jpg') }}" alt="Fly image">
+                        </div>
+                        <div class="item">
+                            <img src="{{ url_for('static', filename='hobbie2.jpeg') }}" alt="Hobbie image">
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 <a href="https://www.linkedin.com/in/aysami">Ayoub SAMI</a>. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- ChatBot Section-->
     <button id="chatbot-toggle-btn"><img src="{{ url_for('static', filename='chatbot.svg') }}" alt="buttonpng" width="40px" height="35px"/></button>
     <div class="chatbot-popup" id="chatbot-popup">
         <div class="chat-header">
-            <span>Chatbot | <a href="#" target="_blank"></a></span>
+            <span>Chatbot | Réservation Aide</span>
             <button id="close-btn">&times;</button>
         </div>
         <div class="chat-box" id="chat-box"></div>
         <div class="chat-input">
-            <input type="text" id="user-input" placeholder="Type a message...">
+            <input type="text" id="user-input" placeholder="Type ton message...">
             <button id="send-btn">Send</button>
         </div>
     </div>

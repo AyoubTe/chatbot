@@ -122,7 +122,7 @@ class Chatbox {
                 this.updateChat();
                 return;
             } else if (!this.messages.find(msg => msg.type === 'DateF')) {
-                this.messages.push({ name: 'User', message });
+                this.messages.push({ name: 'User', type: 'DateF', message });
                 this.updateChat();
                 inputField.value = '';
                 this.currentContext = null; // Reset context
@@ -208,6 +208,7 @@ class Chatbox {
 
 const chatbox = new Chatbox();
 chatbox.display();
+
 
 /*
 const responses = {

@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 @app.get('/')
 def index():
-    script = url_for('static', filename='script.js')
-    style = url_for('static', filename='main.css')
+    script = url_for('static', filename='js/script.js')
+    style = url_for('static', filename='css/main.css')
     return render_template('index.html', script=script, style=style)
 
 

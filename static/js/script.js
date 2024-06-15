@@ -203,7 +203,6 @@ class Chatbox {
         chatMessages.innerHTML = html;
         chatMessages.scrollTop = chatMessages.scrollHeight;
     }
-
 }
 
 const chatbox = new Chatbox();

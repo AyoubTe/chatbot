@@ -48,14 +48,14 @@ def get_response(msg):
                 return result
                 #return random.choice(intent['responses'])
 
-    return "Je ne comprends pas..."
+    return dict(tag="Sujet_inconnu", response="Désolé, je ne comprends pas...")
 
 
 if __name__ == "__main__":
-    print("Let's chat! (type 'quit' to exit)")
+    print("Commencant le chat! (tape 'quit' pour quitter)")
     while True:
-        # sentence = "do you use credit cards?"
-        sentence = input("You: ")
+        # sentence = "Je veux faire une réservation"
+        sentence = input("Toi: ")
         if sentence == "quit":
             break
 

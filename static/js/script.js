@@ -101,7 +101,7 @@ class Chatbox {
                 this.messages.push({ name: 'User', type: 'DateH', message });
                 this.updateChat();
                 inputField.value = '';
-                this.currentContext = null; // Reset context
+                this.currentContext = null;
                 this.messages.push({ name: 'ChatBot', message: 'Votre reservation a ete confirmee avec succes.' });
                 this.updateChat();
                 return;
@@ -132,7 +132,7 @@ class Chatbox {
                 this.messages.push({ name: 'User', type: 'DateF', message });
                 this.updateChat();
                 inputField.value = '';
-                this.currentContext = null; // Reset context
+                this.currentContext = null;
                 this.messages.push({ name: 'ChatBot', message: 'Votre reservation a ete confirmee avec succes.' });
                 this.updateChat();
                 return;
@@ -141,7 +141,7 @@ class Chatbox {
             this.messages.push({ name: 'User', message });
             this.updateChat();
             inputField.value = '';
-            this.currentContext = null; // Reset context
+            this.currentContext = null;
             this.messages.push({ name: 'ChatBot', message: 'Votre reservation a ete annulee avec succes.' });
             this.updateChat();
             return;

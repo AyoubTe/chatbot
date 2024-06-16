@@ -102,7 +102,9 @@
         "Can you help me modify my reservation?",
         "Modifier ma réservation",
         "Je veux changer ma reservation",
-        "Puis-je modifier ma reservation?"
+        "Je veux modifier une réservation",
+        "Puis-je modifier ma reservation?",
+        "Puis-je changer ma reservation?"
       ],
       "responses": [
         "Bien sur, pourriez-vous me fournir votre numero de reservation?",

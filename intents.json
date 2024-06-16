@@ -136,9 +136,9 @@
         "Je cherche des recommandations de voyage"
       ],
       "responses": [
-        "Bien sur! Pouvez-vous me dire quels types de destinations vous intéressent (plage, montagne, ville, etc.)?",
+        "Bien sur! Pouvez-vous me dire quels types de destinations vous intéressent (plage, montagne, ville)?",
         "Je peux vous recommander plusieurs destinations. Preferez-vous des destinations locales ou internationales?",
-        "Quels sont vos interets principaux pour ce voyage (culture, nature, detente, etc.)?"
+        "Quels sont vos interets principaux pour ce voyage (culture, nature, detente)?"
       ]
     }
   ]

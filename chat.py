@@ -48,7 +48,7 @@ def get_response(msg):
                 return result
                 #return random.choice(intent['responses'])
 
-    return dict(tag="Sujet_inconnu", response="Désolé, je ne comprends pas...")
+    return dict(tag="sujet_inconnu", response="Désolé, je ne comprends pas...")
 
 
 if __name__ == "__main__":
@@ -60,4 +60,4 @@ if __name__ == "__main__":
             break
 
         response = get_response(sentence)["response"]
-        print(response)
+        print(bot_name+": "+response)

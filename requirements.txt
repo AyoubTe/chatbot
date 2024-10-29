@@ -1,3 +1,4 @@
-pip install torch
-pip install torchvision
-pip install nltk
+Flask
+torch
+torchvision
+nltk

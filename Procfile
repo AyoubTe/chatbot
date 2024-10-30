@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: sh -c 'python train.py && gunicorn app:app'
